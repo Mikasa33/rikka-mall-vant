@@ -1,0 +1,26 @@
+@import './transition/index.less';
+@import './common.less';
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  color: #323233;
+  font-family: var(--van-base-font);
+  background-color: #f7f8fa;
+  overflow-x: hidden;
+}
+
+html.dark {
+  background-color: #202124;
+  color-scheme: dark;
+}
+
+.van-multi-ellipsis--l1 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
